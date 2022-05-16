@@ -1,0 +1,130 @@
+* {
+--very_pale_blue: hsl(225, 100%, 98%);
+--desaturated_blue: hsl(224, 23%, 55%);
+--dark_blue: hsl(223, 47%, 23%);
+--pale_blue: hsl(225, 100%, 94%);
+--bright_blue: hsl(245, 75%, 52%);
+}
+
+body {
+    font-family: 'Red Hat Display'; 
+    background-color: lightsteelblue;
+    font-size: 16px;
+}
+
+#container {
+    display: block;
+    margin: auto;
+    max-width: 375px;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.hero {
+    width: 375px;
+    height: auto;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+#summary {
+    align-self: center;
+    text-align: center;
+    margin: 0.8rem 1rem 0.1rem 1rem;
+}
+
+#summary h1 {
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+#summary p {
+    position: relative;
+    top: -0.8rem;
+    line-height: 1.6rem;
+    color: var(--desaturated_blue);
+    margin-bottom: 0;
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    border-radius: 1rem;
+    margin: 0 1.7rem;
+    align-items: center;
+    gap: 1rem;
+    background-color: var(--very_pale_blue);
+}
+
+.icon {
+    width: auto;
+    height: 2.5rem;
+    margin-left: 1.5rem;
+}
+
+.annual_plan {
+    background-color: var(--very_pale_blue); 
+}
+
+.annual_plan h4 {
+    font-weight: 700;
+    
+}
+
+.annual_plan p {
+    position: relative;
+    top: -1.2rem;
+    margin-bottom: 0;
+    color: var(--desaturated_blue);   
+}
+
+.info a {
+    margin-left: 3rem;
+    font-size: 14px;
+    color: var(--bright_blue);
+    font-weight: 700;
+}
+
+.info a:hover {
+    text-decoration: none;
+    cursor: pointer;
+    color: hsl(249, 44%, 51%);
+}
+
+button {
+    margin-top: 0px;
+    border: none;
+    font-weight: 700;
+    padding: 1rem 2rem;
+    margin: 1rem 2rem;
+    background-color: var(--bright_blue);
+    color: white;
+    border-radius: 0.8rem;
+    font-size: 13px;
+    box-shadow: 0 15px 20px rgba(0,0,0,0.19);
+}
+
+button:hover {
+    background-color: hsl(249, 44%, 51%);
+}
+
+.cancel {
+    align-self: center;
+    text-decoration: none;
+    font-weight: 700;
+    margin-top: 1rem;
+    margin-bottom: 2.5rem;
+    font-size: 14px;
+    color: var(--desaturated_blue);
+}
+
+.cancel:hover {
+    color: var(--dark_blue);
+}
+
+.attribution { 
+    margin-top: 2rem;
+    font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
